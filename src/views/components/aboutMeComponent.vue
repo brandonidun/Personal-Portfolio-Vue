@@ -18,7 +18,7 @@
           <span>BSc. in Electrical/Electronic Engineering</span> with First
           Class Honors at
           <span>Kwame Nkrumah University of Science and Technology</span> .
-          Achieving a <span>CGPA of 3.74</span>, I honed my expertise in
+          Achieving a <span>GPA of 3.74</span>, I honed my expertise in
           <span>programming, database systems, and machine learning.</span>
           <br />
           <br />
