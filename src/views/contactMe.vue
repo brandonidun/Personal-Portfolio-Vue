@@ -13,7 +13,7 @@
             Brandon Idun-Tawiah
             <br />
             <br />
-            Phone: +233 20 030 2212x
+            Phone: +233 20 030 2212
             <br />
             <br />
             Email:
