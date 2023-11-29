@@ -332,6 +332,7 @@ h4,
   .profile-photo {
     width: 100px;
     height: 100px;
+    margin: 0%;
   }
 
   .social-icon img {
