@@ -64,7 +64,7 @@ export default {
 
 <style scoped>
 .about-me-container {
-  height: 200vh;
+  height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -106,5 +106,11 @@ h1 {
 }
 span {
   color: #ff6600;
+}
+
+@media (max-width: 768px) {
+  .about-me-container {
+    height: 200vh;
+  }
 }
 </style>
