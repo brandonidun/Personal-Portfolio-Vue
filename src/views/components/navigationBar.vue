@@ -42,12 +42,13 @@ export default {
 </script>
 
 <style scoped>
+/* Shared styles for both large and small screens */
 .navbar {
   color: grey;
   display: flex;
   flex-direction: row;
-  justify-content: right;
-  align-items: flex-end;
+  justify-content: space-between; /* Adjust to your preference */
+  align-items: center; /* Align vertically in the center */
   padding: 2%;
   height: 5vh;
   width: 100%;
@@ -55,15 +56,17 @@ export default {
   top: 0;
   left: 0;
 }
+
 ul {
   display: flex;
   flex-direction: row;
-  justify-content: right;
-  align-items: flex-end;
+  justify-content: flex-end; /* Adjust to your preference */
+  align-items: center; /* Align vertically in the center */
   width: 100%;
   list-style-type: none;
   margin-right: 10%;
 }
+
 li {
   margin-left: 7%;
   font-size: 20px;
@@ -85,5 +88,24 @@ a {
   /* Style for the active link */
   color: #ff6600; /* Example color for the active link */
   font-style: italic;
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+  .navbar {
+    display: flex;
+    flex-direction: row;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  li {
+    margin-left: 0px;
+    margin-bottom: 5%; /* Adjust to your preference */
+  }
 }
 </style>

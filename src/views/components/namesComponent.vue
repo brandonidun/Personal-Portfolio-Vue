@@ -102,9 +102,17 @@ export default {
   methods: {
     revealText() {
       this.$refs.mainName.style.opacity = 1;
-      console.log(this.$refs.mainName.offsetWidth);
       this.$refs.mainName.classList.add("animateIn");
-      this.$refs.idun.style.width = this.$refs.mainName.offsetWidth + 25 + "px";
+
+      if (window.innerWidth > 768) {
+        // Adjust width for larger screens
+        this.$refs.idun.style.width =
+          this.$refs.mainName.offsetWidth + 25 + "px";
+      } else {
+        // Adjust width for smaller screens
+        this.$refs.idun.style.width =
+          this.$refs.mainName.offsetWidth - 65 + "px";
+      }
     },
     animateHi() {
       this.$refs.hi.classList.add("animateIn");
@@ -302,6 +310,52 @@ h4,
   100% {
     opacity: 1;
     /* transform: translateX(0%); */
+  }
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 29px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 14px;
+  }
+
+  .profile-photo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .social-icon img {
+    width: 20px;
+  }
+  .social-media ul {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
+  .main {
+    flex-direction: column;
+  }
+
+  .home-text {
+    justify-content: center;
+    margin-left: 0%;
+    height: 30vh;
+  }
+  .social-media {
+    margin-right: 0px;
+    width: 100%;
   }
 }
 </style>

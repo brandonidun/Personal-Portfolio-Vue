@@ -23,7 +23,12 @@ export default {
   width: 100%;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  justify-content: space-between;
   background-color: #1a1a1a;
+}
+@media (max-width: 768px) {
+  #home {
+    height: 100vh;
+  }
 }
 </style>
