@@ -11,8 +11,9 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 #app {
+  background-color: #2e2e2e;
   height: 100vh;
   width: 100%;
   display: flex;
